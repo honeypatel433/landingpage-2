@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.padding {
+    padding: 30px;
+   
+}
+
+.card {
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.des {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.button {
+    border: 1px solid rgb(224, 64, 47);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    width: 120px;
+    color: aliceblue;
+    background-color: #FF6600;
+}
+
+.team-card {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.dark-shadow {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dark-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.newsletter-input {
+    width: 400px;
+    padding: 12px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid #ced4da;
+   
+}
+
+.newsletter-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+    border-color: #495057;
+
+}
+
+.newsletter-btn {
+    border: 1px solid rgb(224, 64, 47);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    color: aliceblue;
+    background-color: #FF6600;
+    width: 400px;
+}
+
+
+
+@media (max-width: 767px) {
+    .team-card {
+        border-right: none !important;
+    
+    }
+}
