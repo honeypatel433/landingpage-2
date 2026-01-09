@@ -10,21 +10,6 @@
     padding: 30px;
    
 }
-
-.card {
-    border-radius: 10px;
-    width: 250px;
-    height: 350px;
-    background-color: #FFFFFF;
-    padding: 20px;
-}
-
-.des {
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000;
-}
-
 .button {
     border: 1px solid rgb(224, 64, 47);
     border-radius: 10px;
@@ -36,10 +21,108 @@
     background-color: #FF6600;
 }
 
-.team-card {
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+.vision-section {
+  background-color: #fff;
 }
+
+.letter-space {
+  letter-spacing: 2px;
+}
+
+.vision-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.vision-card:hover {
+  transform: translateY(-6px);
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.btn-orange {
+  background-color: #ff6a00;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e85d00;
+  color: #fff;
+}
+
+
+.team-card {
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 40px 20px 0;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+.team-card:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.team-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.role {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #9a9a9a;
+  text-transform: uppercase;
+}
+
+.team-social {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.team-social a {
+  flex: 1;
+  padding: 15px 0;
+  border-right: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-social a:last-child {
+  border-right: none;
+}
+
+.team-social img {
+  width: 18px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.team-social img:hover {
+  opacity: 1;
+}
+
 .dark-shadow {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -75,8 +158,6 @@
     background-color: #FF6600;
     width: 400px;
 }
-
-
 
 @media (max-width: 767px) {
     .team-card {
