@@ -1,71 +1,159 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    outline: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
 }
 
 .padding {
-    padding: 30px;
-   
+  padding: 30px;
 }
+
 .button {
-    border: 1px solid rgb(224, 64, 47);
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 10px;
-    font-weight: 600;
-    width: 120px;
-    color: aliceblue;
-    background-color: #FF6600;
+  border: 1px solid rgb(224, 64, 47);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  width: 120px;
+  color: aliceblue;
+  background-color: #FF6600;
+  border: none;
 }
 
+/* hero section */
 
+.boost {
+  margin-top: 80px !important;
+}
+
+.boost-img img {
+  margin-top: 20px !important;
+}
+
+.hero-mt {
+  margin-top: 60px;
+}
+
+.hero-subtitle {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Section */
 .vision-section {
-  background-color: #fff;
+  background-color: #ffffff;
+  margin-bottom: 100px;
+}
+
+/* Heading */
+.vision-title {
+  font-size: 34px;
 }
 
 .letter-space {
   letter-spacing: 2px;
 }
 
+/* Card */
 .vision-card {
   background: #ffffff;
   border-radius: 20px;
-  padding: 40px 20px;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   transition: 0.3s ease;
+  height: 100%;
 }
 
 .vision-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 }
 
+/* Icon */
 .icon-box {
   width: 70px;
   height: 70px;
   border-radius: 16px;
-  background: #f7f7f7;
+  background: #f4f6f8;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
 
+/* Text */
+.vision-text {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Button */
 .btn-orange {
   background-color: #ff6a00;
   color: #fff;
-  padding: 10px 22px;
+  padding: 10px 24px;
   border-radius: 8px;
   border: none;
+  font-weight: 500;
 }
 
 .btn-orange:hover {
   background-color: #e85d00;
   color: #fff;
+}
+
+/* ----------------vision section responsive ---------------- */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .vision-title {
+    font-size: 30px;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .vision-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .vision-card {
+    padding: 30px 20px;
+  }
+}
+
+/* 425px */
+@media (max-width: 425px) {
+  .vision-title {
+    font-size: 26px;
+  }
+
+  .vision-text {
+    font-size: 14px;
+  }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+  .vision-title {
+    font-size: 24px;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .vision-title {
+    font-size: 22px;
+  }
+
+  .btn-orange {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
 }
 
 
@@ -78,7 +166,7 @@
 }
 
 .team-card:hover {
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .team-img {
@@ -124,44 +212,232 @@
 }
 
 .dark-shadow {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .dark-shadow:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
 }
 
 .newsletter-input {
-    width: 400px;
-    padding: 12px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    outline: none;
-    border: 1px solid #ced4da;
-   
+  width: 400px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: 1px solid #ced4da;
 }
 
 .newsletter-input:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
-    border-color: #495057;
-
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+  border-color: #495057;
 }
 
 .newsletter-btn {
-    border: 1px solid rgb(224, 64, 47);
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 10px;
-    font-weight: 600;
-    color: aliceblue;
-    background-color: #FF6600;
-    width: 400px;
+  border: 1px solid rgb(224, 64, 47);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  color: aliceblue;
+  background-color: #FF6600;
+  width: 400px;
 }
 
 @media (max-width: 767px) {
-    .team-card {
-        border-right: none !important;
-    
-    }
+  .team-card {
+    border-right: none !important;
+  }
+}
+
+/* ===================================================== */
+/* 🔥 NAVBAR + OFFCANVAS RESPONSIVE ADDITIONS (NEW ONLY) */
+/* ===================================================== */
+
+/* Prevent background scroll when offcanvas opens */
+body.offcanvas-open {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Stop sideways scroll */
+html,
+body {
+  overflow-x: hidden;
+
+}
+
+/* Navbar spacing */
+.navbar {
+  padding: 12px 0;
+  z-index: 1050;
+}
+
+/* Desktop nav spacing */
+.navbar-nav .nav-link {
+  margin: 0 12px;
+}
+
+/* Offcanvas mobile menu width */
+.offcanvas {
+  width: 80% !important;
+  max-width: 320px;
+}
+
+/* Offcanvas link spacing */
+.offcanvas-body .nav-link {
+  padding: 14px 0;
+  font-size: 18px;
+}
+
+/* Buttons inside offcanvas */
+.offcanvas .button,
+.offcanvas .btn {
+  width: 130px;
+}
+
+/* ===== Responsive Breakpoints ===== */
+
+/* ================= TABLET NAVBAR FIX (768px–991px) ================= */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* Ensure full navbar visible */
+  .navbar-collapse {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Center nav links properly */
+  .navbar-nav {
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  /* Reduce link spacing so everything fits one line */
+  .navbar-nav .nav-link {
+    margin: 0;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  /* Adjust logo size slightly */
+  .navbar-brand img {
+    width: 90px;
+  }
+
+  /* Buttons sizing */
+  .navbar .btn,
+  .navbar .button {
+    padding: 6px 12px;
+    font-size: 14px;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  /* Prevent wrapping */
+  .navbar .container {
+    flex-wrap: nowrap;
+  }
+}
+
+
+/* 425px */
+@media (max-width: 425px) {
+  .navbar-brand img {
+    width: 90px;
+  }
+
+  .offcanvas {
+    width: 85% !important;
+  }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+  .navbar-brand img {
+    width: 85px;
+  }
+
+  .offcanvas {
+    width: 88% !important;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .navbar-brand img {
+    width: 78px;
+  }
+
+  .offcanvas {
+    width: 92% !important;
+  }
+
+  .offcanvas-body .nav-link {
+    font-size: 16px;
+  }
+
+  .offcanvas .button,
+  .offcanvas .btn {
+    width: 115px;
+    font-size: 14px;
+  }
+}
+
+.startup-color {
+  color: #15143966;
+}
+
+/* Section spacing */
+.testimonials-section {
+  background: #ffffff;
+}
+
+/* Small heading (TESTIMONIALS) */
+.section-subtitle {
+  letter-spacing: 3px;
+  font-size: 13px;
+  color: #9aa5b1;
+  font-weight: 600;
+}
+
+/* Main title */
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0b1c2d;
+}
+
+/* Each testimonial block */
+.testimonial-item {
+  align-items: flex-start;
+}
+
+/* User image */
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  /* Figma style rounded */
+  flex-shrink: 0;
+}
+
+/* Testimonial text */
+.testimonial-text {
+  color: #0b1c2d;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* Name */
+.testimonial-name {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #9a9a9a;
+  margin: 0;
 }

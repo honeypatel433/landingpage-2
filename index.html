@@ -10,75 +10,83 @@
 </head>
 
 <body>
+  <!-- header -->
 
   <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
-    <div class="container">
+  <div class="container">
 
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="./img/Logo.png" alt="logo" width="100">
+    </a>
 
-      <a class="navbar-brand" href="#">
-        <img src="./img/Logo.png" alt="logo" width="100">
-      </a>
+    <!-- Hamburger -->
+    <button class="navbar-toggler border-0 d-md-none" type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu"
+      aria-controls="mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-md-flex justify-content-between">
+      <ul class="navbar-nav mx-auto fs-6 fw-medium">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Our App</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+      </ul>
 
-      <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-flex gap-3">
+        <button class="btn fw-semibold">Log in</button>
+        <button class="button">Sign Up</button>
+      </div>
+    </div>
 
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="mobileMenu" data-bs-scroll="false" data-bs-backdrop="true">
+      
+      <div class="offcanvas-header border-bottom">
+        <img src="./img/Logo.png" width="85" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
 
-      <div class="collapse navbar-collapse d-none d-md-flex">
-        <ul class="navbar-nav mx-auto fs-6 fw-medium">
+      <div class="offcanvas-body text-center d-flex flex-column justify-content-between">
+
+        <ul class="navbar-nav fs-5 fw-medium mt-3">
           <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Our App</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
         </ul>
 
-        <div class="d-flex gap-3">
+        <div class="d-flex justify-content-center gap-3 mb-4">
           <button class="btn fw-semibold">Log in</button>
           <button class="button">Sign Up</button>
         </div>
+
       </div>
-
-
-      <div class="offcanvas offcanvas-end d-md-none" id="mobileMenu">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title">
-            <img src="./img/Logo.png" width="90" alt="">
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-        </div>
-
-        <div class="offcanvas-body text-center">
-          <ul class="navbar-nav mb-4 fs-6 fw-medium">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Our App</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-          </ul>
-
-          <div class="d-flex justify-content-center gap-3">
-            <button class="btn fw-semibold">Log in</button>
-            <button class="button">Sign Up</button>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </nav>
-  <section class="py-5">
+
+  </div>
+</nav>
+
+
+  <!-- boost section -->
+  <section class="hero-mt">
     <div class="container">
-      <div class="row align-items-center gy-5">
+      <div class="row gy-5">
 
    
-        <div class="col-12 col-md-6">
-          <h1 class="fw-bold mb-3 py-4">
+        <div class="col-12 col-md-6 boost">
+          <h1 class="fw-bold mb-3 py-4 text-left">
             We boost <br class="d-none d-md-block">
             growth for your <br class="d-none d-md-block">
             startup business
           </h1>
 
-          <p class="mb-4">
-            Our goal is to be at the heart of creativity services industry
+          <p class="hero-subtitle">
+            Our goal is to be at the heart of creativity services industry <br>
             as a digital creator. It has a after comment.
           </p>
 
@@ -100,90 +108,86 @@
 
        
         <div class="col-12 col-md-6 text-center">
-          <img src="./img/Group 27.png" class="" alt="img" width="120%">
+          <img src="./img/Group 27.png" class="img-fluid" alt="img" width="120%" >
         </div>
 
       </div>
     </div>
   </section>
 
-
-<section class="py-5 vision-section">
+<!-- service section -->
+<section class="vision-section">
   <div class="container">
 
-  
+    <!-- Section Heading -->
     <div class="text-center mb-5">
       <p class="text-uppercase text-secondary small mb-2 letter-space">
         Service
       </p>
-      <h2 class="fw-bold">
+      <h2 class="fw-bold vision-title">
         Our Vision & Our Goal
       </h2>
     </div>
 
+    <!-- Cards Row -->
     <div class="row justify-content-center g-4">
 
       <!-- Card 1 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="vision-card text-center h-100">
+      <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+        <div class="vision-card text-center h-100 p-4">
           <div class="icon-box mb-4">
             <img src="./img/icon-1.png" width="40" alt="Graphic Design">
           </div>
 
           <h5 class="fw-bold mb-3">Graphic Design</h5>
 
-          <p class="text-secondary px-3">
+          <p class="text-secondary vision-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Quisque dui mi, bibendum eu erat id, ultricies semper metus.
           </p>
 
-          <div class="mt-auto">
-            <button class="btn btn-orange">
-              Learn More
-            </button>
+          <div class="mt-auto pt-3">
+            <button class="btn btn-orange">Learn More</button>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="vision-card text-center h-100">
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+        <div class="vision-card text-center h-100 p-4">
           <div class="icon-box mb-4">
             <img src="./img/icon-2.png" width="40" alt="Video Editing">
           </div>
 
           <h5 class="fw-bold mb-3">Video Editing</h5>
 
-          <p class="text-secondary px-3">
+          <p class="text-secondary vision-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Quisque dui mi, bibendum eu erat id, ultricies semper metus.
           </p>
 
-          <div class="mt-auto">
-            <button class="btn btn-orange">
-              Learn More
-            </button>
+          <div class="mt-auto pt-3">
+            <button class="btn btn-orange">Learn More</button>
           </div>
         </div>
       </div>
 
-  
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="vision-card text-center h-100">
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+        <div class="vision-card text-center h-100 p-4">
           <div class="icon-box mb-4">
             <img src="./img/icon-3.png" width="40" alt="Digital Marketing">
           </div>
 
           <h5 class="fw-bold mb-3">Digital Marketing</h5>
 
-          <p class="text-secondary px-3">
+          <p class="text-secondary vision-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Quisque dui mi, bibendum eu erat id, ultricies semper metus.
           </p>
 
-          <div class="mt-auto">
-            <button class="btn btn-orange">
-              Learn More
-            </button>
+          <div class="mt-auto pt-3">
+            <button class="btn btn-orange">Learn More</button>
           </div>
         </div>
       </div>
@@ -192,23 +196,24 @@
   </div>
 </section>
 
+<!-- many block section -->
   <section class="padding d-flex align-items-center">
   <div class="container">
-    <div class="row justify-content-center align-items-center gy-4">
+    <div class="row gy-4">
 
     
-      <div class="col-12 col-md-6 text-center text-md-start">
-        <h6 class="mb-3">
+      <div class="col-12 col-md-6 text-left text-md-start">
+        <h4 class="mb-3">
           Many Blocks and <br class="d-none d-md-block">
           Components
-        </h6>
+        </h4>
 
-        <p class="text-secondary">
-          Startup Framework contains components and complex blocks which can
-          easily be integrated into almost any design.
+        <p class="startup-color">
+          Startup Framework contains components <br> and complex blocks which can
+          easily be <br> integrated into almost any design.
         </p>
 
-        <button class="btn btn-outline-dark fs-6 mt-3">
+        <button class="btn border rounded-pill mt-5 px-4 py-2 fw-semibold text-dark bg-white">
           Explore
         </button>
       </div>
@@ -216,73 +221,88 @@
   
       <div class="col-12 col-md-6 d-flex justify-content-center">
         <img
-          src="./img/Video Player.png"  alt="Video Player"  class=""  width="100%" >
+          src="./img/Video Player.png"  alt="Video Player"  class="img-fluid" >
       </div>
 
     </div>
   </div>
 </section>
 
-  <section class="py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h6 class="text-secondary text-uppercase">Testimonials</h6>
-        <h3 class="fw-bold">What Clients Say About Us</h3>
-      </div>
-      <div class="row g-4">
-        <div class="col-12 col-md-6">
-          <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
-            <img src="./img/Userpic (1).png" alt="Rayhan Curran" class="img-fluid" width="60" style="border-radius: 0;">
-            <div>
-              <p class="text-secondary mb-2">
-                Get a fully retina ready site when you build with Startup Framework.
-                Websites look sharper and more gorgeous on devices with retina display support.
-              </p>
-              <h6 class="text-uppercase small fw-semibold text-muted">Rayhan Curran</h6>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-12 col-md-6">
-          <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
-            <img src="./img/Mask (3).png" alt="Kayley Frame" class="img-fluid" width="60" style="border-radius: 0;">
-            <div>
-              <p class="text-secondary mb-2">
-                As a business targeting high net worth individuals, we were looking
-                for a slick, cool and minimalistic design for our website.
-              </p>
-              <h6 class="text-uppercase small fw-semibold text-muted">Kayley Frame</h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
-            <img src="./img/Userpic (2).png" alt="Gene Whitfield" class="img-fluid" width="60"
-              style="border-radius: 0;">
-            <div>
-              <p class="text-secondary mb-2">
-                The most important part of the Startup Framework is the samples.
-              </p>
-              <h6 class="text-uppercase small fw-semibold text-muted">Gene Whitfield</h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
-            <img src="./img/Userpic (3).png" alt="Allan Kim" class="img-fluid" width="60" style="border-radius: 0;">
-            <div>
-              <p class="text-secondary mb-2">
-                I've built my website with Startup just in one day,
-                and it was ready-to-go.
-              </p>
-              <h6 class="text-uppercase small fw-semibold text-muted">Allan Kim</h6>
-            </div>
-          </div>
-        </div>
+<!-- testimonial section -->
 
-      </div>
+  <section class="testimonials-section py-5">
+  <div class="container">
+    
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <p class="section-subtitle mb-2">TESTIMONIALS</p>
+      <h2 class="section-title">What Clients Say About Us</h2>
     </div>
-  </section>
+
+    <div class="row g-5">
+
+      <!-- Testimonial 1 -->
+      <div class="col-12 col-md-6">
+        <div class="testimonial-item d-flex gap-3">
+          <img src="./img/Userpic (1).png" class="testimonial-img" alt="">
+          <div>
+            <p class="testimonial-text">
+              Get a fully retina ready site when you build with Startup Framework.
+              Websites look sharper and more gorgeous on devices with retina display support.
+            </p>
+            <h6 class="testimonial-name">RAYHAN CURRAN</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-12 col-md-6">
+        <div class="testimonial-item d-flex gap-3">
+          <img src="./img/Mask (3).png" class="testimonial-img" alt="">
+          <div>
+            <p class="testimonial-text">
+              As a business targeting high net worth individuals, we were looking
+              for a slick, cool and minimalistic design for our website.
+            </p>
+            <h6 class="testimonial-name">KAYLEY FRAME</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-12 col-md-6">
+        <div class="testimonial-item d-flex gap-3">
+          <img src="./img/Userpic (2).png" class="testimonial-img" alt="">
+          <div>
+            <p class="testimonial-text">
+              The most important part of the Startup Framework is the samples.
+            </p>
+            <h6 class="testimonial-name">GENE WHITFIELD</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="col-12 col-md-6">
+        <div class="testimonial-item d-flex gap-3">
+          <img src="./img/Userpic (3).png" class="testimonial-img" alt="">
+          <div>
+            <p class="testimonial-text">
+              I've built my website with Startup just in one day, and it was ready-to-go.
+            </p>
+            <h6 class="testimonial-name">ALLAN KIM</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
   <section class="py-5">
   <div class="container">
     <div class="text-center mb-5">
